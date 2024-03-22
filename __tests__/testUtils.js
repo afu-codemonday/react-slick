@@ -46,7 +46,7 @@ export function createReactSlider({ noOfSlides, ...props }) {
 // performs most operations like the ones when mounted inside Slider component
 export function createInnerSlider({ noOfSlides, ...settings }) {
   if (settings.centerMode) {
-    settings.slidesToScroll = 1; // always scroll by one when centerMode is enabled
+    // settings.slidesToScroll = 1; // always scroll by one when centerMode is enabled
   }
   settings = assign({}, defaultProps, settings);
   const children = React.Children.toArray(
